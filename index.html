@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medigo - Your Health Partner</title>
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        /* styles for Medigo */
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: linear-gradient(to top right, rgb(5, 189, 5), #FFC107);
+            color: rgb(255, 255, 255);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+        }
+
+        .make_hover {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 12px;
+        }
+
+        .make_hover:hover {
+            background-color: rgb(5, 189, 5);
+            transition-duration: 0.5s;
+
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Tangerine', serif;
+            font-size: 26px;
+            font-size: 48px;
+            color: #FFC107;
+        }
+
+        .feature-box {
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .feature-box:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        #slider {
+            max-height: 565px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        #slider img {
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .carousel-item {
+            height: 25rem;
+        }
+
+        #doctor-section {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        #doctor-image {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        #doctor-info {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        #discover-more-btn {
+            text-decoration: none;
+            background-color: rgb(5, 189, 5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #discover-more-btn:hover {
+            background-color: #FFC107;
+        }
+
+        .yellow {
+            background-color: #ffd454e1;
+        }
+
+        #footer {
+            background-color: #ffd454e1;
+        }
+
+
+        .footer-line {
+            padding-top: 10px;
+            color: black;
+            background-color:rgb(5, 189, 5) ;
+        }
+        .foot ul{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .foot ul li{
+            list-style: none;
+            font-size: 28px;
+        }
+        .support{
+            text-decoration: none;
+            color: rgb(5, 189, 5);
+        }
+        .services{
+            font-size: 35px;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div data-aos="flip-down"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+            <h1>Medi<span class="text-warning">Go</span></h1>
+            <p>Your Health Partner</p>
+        </div>
+        
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning border border-light" >
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="900">
+                <ul class="navbar-nav m-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white make_hover" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white make_hover" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white make_hover" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white make_hover" href="#">Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white make_hover" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="doctor-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <img src="images/doctor.jpg" alt="Doctor" id="doctor-image">
+                </div>
+                <div class="col-md-6 text-center" id="doctor-info" data-aos="fade-left" data-aos-offset="400"
+                    data-aos-easing="ease-in-sine">
+                    <h2>Best Care & Better Doctor</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris vel justo dapibus
+                        gravida. Proin feugiat sapien vel ante fringilla, at eleifend magna aliquam. Integer bibendum ex
+                        id orci sodales, vel tincidunt urna bibendum.</p>
+                    <a href="#" id="discover-more-btn">Discover more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="yellow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="text-white services mb-4">Services </h1>
+                </div>
+                <div class="col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="feature-box">
+                        <h2>Appointment Booking</h2>
+                        <p>Book your medical appointments online with ease.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="feature-box">
+                        <h2>Health Records</h2>
+                        <p>Access and manage your health records securely.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="feature-box">
+                        <h2>Specialized Care</h2>
+                        <p>Explore a range of specialized healthcare services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctor-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pb-4 text-center" id="doctor-info" data-aos="fade-left" data-aos-offset="400"
+                data-aos-easing="ease-in-sine">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris vel justo dapibus
+                    gravida. Proin feugiat sapien vel ante fringilla, at eleifend magna aliquam. Integer bibendum ex
+                    id orci sodales, vel tincidunt urna bibendum.</p>
+                    <a href="#" id="discover-more-btn">Learn more</a>
+                </div>
+                <div class="col-md-6 shadow p-3 mb-5 bg-body rounded" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <img src="images/about_us.jpg" alt="Doctor" id="doctor-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="doctor-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 shadow p-3 mb-4 bg-body rounded" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <img src="images/privacy-policy.jpg" alt="Doctor" id="doctor-image">
+                </div>
+                <div class="col-md-6 pt-3 text-center" id="doctor-info" data-aos="fade-left" data-aos-offset="400"
+                    data-aos-easing="ease-in-sine">
+                    <h2>Privacy Policy</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris vel justo dapibus
+                        gravida. Proin feugiat sapien vel ante fringilla, at eleifend magna aliquam. Integer bibendum ex
+                        id orci sodales, vel tincidunt urna bibendum.</p>
+                        <a href="#" id="discover-more-btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="feature-box">
+                        <h2>Contact Our Support Team</h2>
+                        <p>Have questions? Contact our support team at
+                            <a class="support" href="#">support@medigo.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-4 col-sm-4 marb20 foot">
+                        <h2 class="white pt-3 text-success ">Connect With Us </h2>
+                        <ul>
+                            <li>
+                                <a href="#" class="social-margin text-success" target="blank">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="blank" class="social-margin text-success">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="blank" class="social-margin text-success">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer>
+        <div class="footer-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ms-4">
+                        <p>© All Copyright Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
